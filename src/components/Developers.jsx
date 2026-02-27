@@ -12,7 +12,7 @@ const Developers = () => {
                         <p className="dev-description">
                             We have made it simple and easy to integrate our APIs into any application you want to develop or build that involves monetary transactions.
                         </p>
-                        <button className="dev-btn">EXPLORE API</button>
+                        <a href="https://developers.reddeonline.com/" className="dev-btn" target="_blank" rel="noopener noreferrer">EXPLORE API</a>
                     </div>
 
                     <div className="dev-code-window">

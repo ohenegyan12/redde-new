@@ -21,7 +21,7 @@ const Navbar = () => {
 
                 <div className="navbar-links">
                     <a href="#about" className="nav-link">About Us</a>
-                    <a href="#developers" className="nav-link">Developers</a>
+                    <a href="https://developers.reddeonline.com/" className="nav-link" target="_blank" rel="noopener noreferrer">Developers</a>
                     <a href="#resources" className="nav-link">Resources</a>
                     <a href="#company" className="nav-link">Company</a>
                 </div>

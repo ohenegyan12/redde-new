@@ -34,10 +34,10 @@ const Footer = () => {
                     <div className="footer-group">
                         <h3>Support</h3>
                         <ul>
-                            <li><a href="#docs">Documentation</a></li>
+                            <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Documentation</a></li>
                             <li><a href="#checkout">Checkout</a></li>
-                            <li><a href="#api">Integration & API</a></li>
-                            <li><a href="#plugins">Plugins and SDKs</a></li>
+                            <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Integration & API</a></li>
+                            <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Plugins and SDKs</a></li>
                         </ul>
                     </div>
 
