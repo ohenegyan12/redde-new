@@ -1,0 +1,97 @@
+.contact-section {
+    background-color: #ffffff;
+    width: 100%;
+    border-top: 1px solid #efefef;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.contact-card {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+    border-right: 1px solid #efefef;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card:last-child {
+    border-right: none;
+}
+
+.contact-card:hover {
+    background-color: #fafafa;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.arrow-btn {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover .arrow-btn {
+    background-color: #000000;
+    color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.arrow-btn svg {
+    width: 28px;
+    height: 28px;
+}
+
+.card-footer-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 500;
+    max-width: 300px;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 4rem 2rem;
+        min-height: 350px;
+        border-right: none;
+        border-bottom: 1px solid #efefef;
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+    }
+
+    .arrow-btn {
+        width: 52px;
+        height: 52px;
+    }
+}

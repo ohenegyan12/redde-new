@@ -1,0 +1,122 @@
+.merchants-section {
+    background-color: var(--bg-black);
+    padding: 8rem 0;
+    width: 100%;
+}
+
+.merchants-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.merchants-header {
+    text-align: center;
+    margin-bottom: 6rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.merchants-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.merchants-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.15rem;
+    color: var(--text-white);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.merchants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.merchant-card {
+    border-radius: 60px;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 380px;
+    transition: transform 0.3s ease;
+}
+
+.merchant-card:hover {
+    transform: translateY(-10px);
+}
+
+.merchant-card.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.merchant-card.red {
+    background-color: var(--primary-red);
+    color: #ffffff;
+}
+
+.merchant-card.light {
+    background-color: #e8e8e8;
+    color: #000000;
+}
+
+.card-label {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid currentColor;
+    border-radius: 100px;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.card-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 1200px) {
+    .merchants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .merchant-card.light {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .merchants-container {
+        padding: 0 2rem;
+    }
+
+    .merchants-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .merchant-card {
+        grid-column: span 1;
+        min-height: auto;
+        padding: 3rem 2rem;
+        border-radius: 40px;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+}

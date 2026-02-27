@@ -1,0 +1,132 @@
+.features-section {
+    background-color: #ffffff;
+    padding: 8rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.features-header {
+    max-width: 1400px;
+    margin: 0 auto 4rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.features-main-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000000;
+    text-transform: none;
+    /* Based on image case */
+}
+
+.features-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.control-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.control-btn.prev {
+    background: #e5e5e5;
+    color: #000;
+}
+
+.control-btn.next {
+    background: #D80027;
+    color: #fff;
+}
+
+.control-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.control-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.features-carousel {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(2rem, 4rem, calc((100vw - 1400px) / 2 + 4rem));
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.features-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.feature-card {
+    min-width: 1000px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-card-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.feature-card-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-white);
+    opacity: 0.9;
+    max-width: 700px;
+}
+
+@media (max-width: 1024px) {
+    .features-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    .features-carousel {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .feature-card {
+        min-width: calc(100vw - 4rem);
+        padding: 4rem 2rem;
+    }
+
+    .feature-card-title {
+        font-size: 2.5rem;
+    }
+}
