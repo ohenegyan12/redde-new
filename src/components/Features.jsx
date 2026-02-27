@@ -31,7 +31,7 @@ const Features = () => {
     };
 
     return (
-        <section className="features-section">
+        <section className="features-section" id="features">
             <div className="features-header">
                 <h2 className="features-main-title">Designed for better<br />payments</h2>
                 <div className="features-controls">

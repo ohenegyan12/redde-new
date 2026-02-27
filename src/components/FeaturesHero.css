@@ -1,0 +1,115 @@
+.features-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.features-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.8) 30%,
+            rgba(0, 0, 0, 0) 100%);
+    z-index: 2;
+}
+
+.features-hero-container {
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    z-index: 3;
+}
+
+.features-hero-content {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.features-hero-label {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+.features-hero-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.features-hero-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.features-hero-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.features-hero-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .features-hero-overlay {
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.6) 100%);
+    }
+
+    .features-hero-container {
+        padding: 0 2rem;
+    }
+
+    .features-hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .features-hero-content {
+        align-items: center;
+        text-align: center;
+    }
+}

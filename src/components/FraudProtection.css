@@ -1,0 +1,90 @@
+.fraud-protection-section {
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+    width: 100%;
+}
+
+.fraud-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.fraud-header {
+    margin-bottom: 5rem;
+}
+
+.fraud-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.fraud-subtitle {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.fraud-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.fraud-card {
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 4rem 3rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fraud-card:hover {
+    transform: translateY(-8px);
+}
+
+.fraud-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2rem;
+}
+
+.fraud-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fraud-card-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.fraud-card-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .fraud-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fraud-card {
+        padding: 3rem 2rem;
+    }
+}

@@ -35,9 +35,9 @@ const Footer = () => {
                         <h3>Support</h3>
                         <ul>
                             <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Documentation</a></li>
-                            <li><a href="#checkout">Checkout</a></li>
-                            <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Integration & API</a></li>
-                            <li><a href="https://developers.reddeonline.com/" target="_blank" rel="noopener noreferrer">Plugins and SDKs</a></li>
+                            <li><a href="https://developers.reddeonline.com/checkout.html" target="_blank" rel="noopener noreferrer">Checkout</a></li>
+                            <li><a href="https://developers.reddeonline.com/rest-api.html" target="_blank" rel="noopener noreferrer">Integration & API</a></li>
+                            <li><a href="https://developers.reddeonline.com/plugins.html" target="_blank" rel="noopener noreferrer">Plugins and SDKs</a></li>
                         </ul>
                     </div>
 

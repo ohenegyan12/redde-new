@@ -1,0 +1,82 @@
+.payout-speed-section {
+    background: linear-gradient(180deg, #ffffff 0%, #fdf2f2 100%);
+    padding: 12rem 0;
+    width: 100%;
+}
+
+.payout-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.payout-header {
+    margin-bottom: 6rem;
+}
+
+.payout-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.payout-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.payout-tagline {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.payout-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.payout-text {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.payout-number {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(8rem, 22vw, 22rem);
+    font-weight: 950;
+    color: #1a1a1a;
+    line-height: 0.75;
+    letter-spacing: -0.05em;
+}
+
+@media (max-width: 900px) {
+    .payout-speed-section {
+        padding: 8rem 0;
+    }
+
+    .payout-visual {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .payout-number {
+        font-size: 10rem;
+        line-height: 0.9;
+    }
+}

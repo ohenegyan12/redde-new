@@ -1,29 +1,33 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Features from './components/Features'
-import Solutions from './components/Solutions'
-import Merchants from './components/Merchants'
-import Developers from './components/Developers'
-import Security from './components/Security'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import FeaturesPage from './pages/FeaturesPage';
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
-    <div className="app-container">
-      <Navbar />
-      <Hero />
-      <About />
-      <Features />
-      <Solutions />
-      <Merchants />
-      <Developers />
-      <Security />
-      <Contact />
-      <Footer />
-    </div>
-  )
+    <Router>
+      <div className="app-container">
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<FeaturesPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
