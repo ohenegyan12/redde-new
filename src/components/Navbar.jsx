@@ -70,8 +70,6 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-
-                    <a href="/#company" className="nav-link">Company</a>
                 </div>
 
                 <div className="navbar-actions">

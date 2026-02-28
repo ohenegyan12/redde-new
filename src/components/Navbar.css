@@ -36,6 +36,8 @@
 .navbar-logo {
     display: flex;
     align-items: center;
+    flex: 1;
+    /* Take up equal space on the left */
 }
 
 .navbar-logo img {
@@ -52,6 +54,9 @@
     display: flex;
     gap: 2.5rem;
     align-items: center;
+    justify-content: center;
+    flex: 2;
+    /* Center piece takes more space */
 }
 
 .nav-link {
@@ -63,6 +68,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
 }
 
 .chevron-icon {
@@ -101,6 +107,9 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex: 1;
+    /* Take up equal space on the right */
+    justify-content: flex-end;
 }
 
 .btn-signin {

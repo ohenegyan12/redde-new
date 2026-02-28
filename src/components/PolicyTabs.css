@@ -1,0 +1,157 @@
+.policy-tabs-section {
+    background-color: #ffffff;
+    padding: 2rem 0 10rem;
+    width: 100%;
+}
+
+.policy-tabs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.tabs-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+}
+
+.policy-tab-btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 100px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.policy-tab-btn:hover {
+    background-color: #333;
+}
+
+.policy-tab-btn.active {
+    background-color: #94041e;
+    /* Using the brand red requested earlier */
+    color: #ffffff;
+}
+
+.policy-content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: left;
+}
+
+.policy-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.policy-section-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+}
+
+.policy-section-content {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.policy-section-content p {
+    margin-bottom: 1.5rem;
+}
+
+.policy-section-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.policy-section-content li {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .policy-tabs-container {
+        padding: 0 2rem;
+    }
+
+    .tabs-navigation {
+        gap: 0.75rem;
+        margin-bottom: 4rem;
+    }
+
+    .policy-tab-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .policy-section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Table Styles for Policy Schedules */
+.policy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.policy-table th {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid #94041e;
+}
+
+.policy-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    vertical-align: top;
+}
+
+.policy-table tr:last-child td {
+    border-bottom: none;
+}
+
+.policy-table tr:hover {
+    background-color: #fafafa;
+}
+
+@media (max-width: 600px) {
+    .policy-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .policy-table th,
+    .policy-table td {
+        padding: 0.8rem 1rem;
+    }
+}

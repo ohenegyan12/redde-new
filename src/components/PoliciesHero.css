@@ -1,0 +1,42 @@
+.policies-hero {
+    background-color: #ffffff;
+    padding: 10rem 0 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.policies-hero-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.policies-hero-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.policies-hero-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .policies-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .policies-hero-container {
+        padding: 0 2rem;
+    }
+}
