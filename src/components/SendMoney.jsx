@@ -43,7 +43,7 @@ const SendMoney = () => {
                     <p className="send-money-description">
                         Send money faster, easier, and with total confidence. Redde makes every transfer seamless, so your money gets where it needs to go, without stress.
                     </p>
-                    <button className="send-money-btn">Get started</button>
+                    <a href="https://demoapp.reddeonline.com/register" target="_blank" rel="noopener noreferrer" className="send-money-btn">Get started</a>
                 </div>
 
                 <div className="send-money-grid">

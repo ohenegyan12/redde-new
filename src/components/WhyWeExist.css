@@ -1,0 +1,107 @@
+.why-we-exist {
+    padding: 10rem 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.why-we-exist-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.why-we-exist-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.why-we-exist-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.why-we-exist-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 3rem;
+    letter-spacing: -0.01em;
+}
+
+.why-we-exist-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.why-we-exist-paragraphs p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.why-we-exist-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.why-we-exist-image {
+    width: 100%;
+    max-width: 580px;
+    height: 480px;
+    /* Reduced fixed height */
+    object-fit: cover;
+    /* Crop to fit while maintaining aspect ratio */
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1024px) {
+    .why-we-exist-content {
+        gap: 3rem;
+    }
+
+    .why-we-exist-title {
+        font-size: 2.8rem;
+    }
+
+    .why-we-exist-paragraphs p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 868px) {
+    .why-we-exist {
+        padding: 6rem 0;
+    }
+
+    .why-we-exist-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .why-we-exist-text {
+        max-width: 100%;
+    }
+
+    .why-we-exist-image-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .why-we-exist-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-we-exist-container {
+        padding: 0 2rem;
+    }
+}

@@ -25,6 +25,31 @@
     line-height: 1.6;
     color: #666;
     max-width: 240px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .footer-links {
@@ -102,25 +127,32 @@
 
 @media (max-width: 1200px) {
     .footer-container {
-        grid-template-columns: 1fr;
-        gap: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem 2rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
     }
 
     .footer-certs {
+        grid-column: 1 / -1;
         flex-direction: row;
-        justify-content: flex-start;
+        gap: 2rem;
         align-items: center;
+    }
+
+    .cert-logos {
+        flex-direction: row;
+        gap: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-    }
-
     .footer-container {
+        grid-template-columns: repeat(2, 1fr);
         padding: 0 2rem;
+        gap: 3rem 1.5rem;
     }
 
     .footer-bottom {

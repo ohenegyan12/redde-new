@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PoliciesPage from './pages/PoliciesPage';
+import FAQPage from './pages/FAQPage';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -23,8 +25,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/policies" element={<PoliciesPage />} />
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
         <Footer />
       </div>

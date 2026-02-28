@@ -1,0 +1,42 @@
+.faq-hero {
+    padding: 8rem 2rem 4rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.faq-hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-hero-title {
+    font-family: 'Neo Sans Std', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.faq-hero-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .faq-hero {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .faq-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .faq-hero-description {
+        font-size: 1rem;
+    }
+}

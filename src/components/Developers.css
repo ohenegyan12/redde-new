@@ -147,6 +147,11 @@
         gap: 4rem;
     }
 
+    .dev-code-window {
+        display: none;
+        /* Hidden on mobile/tablet */
+    }
+
     .developers-card {
         padding: 4rem 3rem;
     }

@@ -42,7 +42,7 @@ const Hero = () => {
                 <p className="hero-description">
                     Redde helps you collect payments seamlessly for your products and services.
                 </p>
-                <button className="hero-btn">Get Started</button>
+                <a href="https://demoapp.reddeonline.com/register" target="_blank" rel="noopener noreferrer" className="hero-btn">Get Started</a>
             </div>
 
             {/* Right Scrolling Column */}

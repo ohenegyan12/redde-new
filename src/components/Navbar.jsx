@@ -5,6 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -15,15 +16,38 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Close mobile menu when location changes
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+    }, [location]);
+
     // Helper to determine if a link is active
     const isActive = (path) => location.pathname === path;
 
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+            <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+                <div className="mobile-menu-content">
+                    <Link to="/features" className="mobile-nav-link">Features</Link>
+                    <a href="https://developers.reddeonline.com/" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">Developers</a>
+
+                    <div className="mobile-nav-group">
+                        <span className="mobile-group-title">Resources</span>
+                        <Link to="/faq" className="mobile-sub-link">FAQ</Link>
+                        <a href="https://www.reddeonline.com/assets/onboarding/redde-onboarding-document.pdf" className="mobile-sub-link" target="_blank" rel="noopener noreferrer">Onboarding Document</a>
+                    </div>
+
+                    <div className="mobile-menu-actions">
+                        <a href="https://app.reddeonline.com/login?return=%2Fdashboard" target="_blank" rel="noopener noreferrer" className="btn-signin-mobile">Sign in</a>
+                        <a href="https://demoapp.reddeonline.com/register" target="_blank" rel="noopener noreferrer" className="btn-signup-mobile">Create Account</a>
+                    </div>
+                </div>
+            </div>
+
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo">
+                <a href="/" className="navbar-logo">
                     <img src="/redde-white.svg" alt="Redde Logo" />
-                </Link>
+                </a>
 
                 <div className="navbar-links">
                     <Link to="/features" className={`nav-link ${isActive('/features') ? 'active' : ''}`}>Features</Link>
@@ -73,15 +97,18 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-actions">
-                    <button className="btn-signin">Sign in</button>
-                    <button className="btn-signup">Create Account</button>
+                    <a href="https://app.reddeonline.com/login?return=%2Fdashboard" target="_blank" rel="noopener noreferrer" className="btn-signin">Sign in</a>
+                    <a href="https://demoapp.reddeonline.com/register" target="_blank" rel="noopener noreferrer" className="btn-signup">Create Account</a>
                 </div>
 
-                {/* Mobile Toggle Placeholder */}
-                <div className="mobile-toggle">
+                <button
+                    className={`mobile-toggle ${isMobileMenuOpen ? 'active' : ''}`}
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
                     <span></span>
                     <span></span>
-                </div>
+                    <span></span>
+                </button>
             </div>
         </nav>
     );

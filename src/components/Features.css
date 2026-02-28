@@ -71,6 +71,9 @@
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: clamp(2rem, 4rem, calc((100vw - 1400px) / 2 + 4rem));
 }
 
 .features-carousel::-webkit-scrollbar {
@@ -86,6 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    scroll-snap-align: start;
 }
 
 .feature-card-title {
@@ -110,9 +114,15 @@
 @media (max-width: 1024px) {
     .features-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 2rem;
         padding: 0 2rem;
+    }
+
+    .features-controls {
+        justify-content: center;
+        width: 100%;
     }
 
     .features-carousel {

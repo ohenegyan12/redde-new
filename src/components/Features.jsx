@@ -22,11 +22,16 @@ const Features = () => {
     const scroll = (direction) => {
         const { current } = scrollRef;
         if (current) {
-            const scrollAmount = current.offsetWidth * 0.8;
-            current.scrollBy({
-                left: direction === 'left' ? -scrollAmount : scrollAmount,
-                behavior: 'smooth'
-            });
+            const card = current.querySelector('.feature-card');
+            if (card) {
+                const cardWidth = card.offsetWidth;
+                const gap = 32; // 2rem gap
+                const scrollAmount = cardWidth + gap;
+                current.scrollBy({
+                    left: direction === 'left' ? -scrollAmount : scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
         }
     };
 

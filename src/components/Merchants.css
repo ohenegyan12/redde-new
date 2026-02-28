@@ -89,31 +89,35 @@
     letter-spacing: -0.01em;
 }
 
-@media (max-width: 1200px) {
-    .merchants-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .merchant-card.light {
-        grid-column: span 2;
-    }
-}
-
-@media (max-width: 900px) {
-    .merchants-container {
-        padding: 0 2rem;
-    }
-
+@media (max-width: 1024px) {
     .merchants-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .merchant-card {
-        grid-column: span 1;
+        grid-column: span 1 !important;
         min-height: auto;
         padding: 3rem 2rem;
         border-radius: 40px;
+    }
+
+    .merchant-card.light {
+        grid-column: span 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .merchants-section {
+        padding: 5rem 0;
+    }
+
+    .merchants-container {
+        padding: 0 2rem;
+    }
+
+    .merchants-title {
+        font-size: 2.22rem;
     }
 
     .card-text {
