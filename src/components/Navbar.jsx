@@ -27,6 +27,15 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+                <button
+                    className="mobile-menu-close"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
                 <div className="mobile-menu-content">
                     <Link to="/features" className="mobile-nav-link">Features</Link>
                     <a href="https://developers.reddeonline.com/" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">Developers</a>
