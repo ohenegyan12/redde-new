@@ -651,7 +651,7 @@ const PolicyTabs = () => {
                                 <tr><td>Time Cards/Sheets</td><td>2 years</td></tr>
                                 <tr><td>Garnishments / Assignments</td><td>Termination + 7 years</td></tr>
                                 <tr><td>Unclaimed Wage Records</td><td>6 years</td></tr>
-                                <li>Retirement and Pension Records</li><td>Permanent</td>
+                                <tr><td>Retirement and Pension Records</td><td>Permanent</td></tr>
                                 <tr><td>Personnel Records (Individual)</td><td>6 years after separation</td></tr>
                                 <tr><td>Employment Contracts</td><td>7 years after separation</td></tr>
                                 <tr><td>Employee Medical Records</td><td>Separation + 6 years</td></tr>

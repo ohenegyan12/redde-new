@@ -89,7 +89,7 @@
 
 @media (max-width: 768px) {
     .policy-tabs-container {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     .tabs-navigation {
